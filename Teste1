@@ -1,0 +1,36 @@
+
+Plano de Teste - Sistema de Gerenciamento de Projetos
+
+1. Introdução
+Este plano de teste descreve a abordagem para testar o Sistema de Gerenciamento de Projetos, que tem como objetivo permitir que os usuários criem projetos inserindo um nome e descrição. O objetivo deste plano é garantir a qualidade e confiabilidade do software antes do lançamento.
+
+2. Objetivos
+Os objetivos do teste são:
+- Verificar se todas as funcionalidades do sistema de gerenciamento de projetos estão implementadas corretamente.
+- Validar se o sistema atende aos requisitos funcionais e não funcionais especificados.
+- Identificar e corrigir defeitos encontrados durante o teste.
+
+
+3. Estratégia de Teste
+A estratégia de teste incluirá:
+- Testes unitários realizados pelos desenvolvedores para verificar as funcionalidades individualmente.
+- Testes de integração para garantir que as diferentes partes do sistema funcionem em conjunto.
+- Testes de sistema para verificar o funcionamento do sistema como um todo.
+- Testes de aceitação realizados pelos usuários finais para validar o sistema em um ambiente de produção simulado.
+
+4. Cronograma
+O teste será realizado ao longo de 3 semanas, conforme o seguinte cronograma:
+- Testes unitários: 1ª semana.
+- Testes de integração: 1ª semana.
+- Testes de sistema: 2ª semana.
+- Testes de aceitação: 3ª semana.
+
+5. Critérios de Aceitação
+O sistema será considerado aceito quando:
+- 75% dos casos de teste forem executados e passarem com sucesso.
+- Todos os defeitos críticos e importantes forem corrigidos e verificados.
+
+
+6. Considerações Finais
+Este plano de teste é um guia para o processo de teste do Sistema de Gerenciamento de Tarefas. O objetivo é garantir que o software atenda aos requisitos e seja lançado com alta qualidade e confiabilidade.
+
