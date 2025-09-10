@@ -1,0 +1,57 @@
+import re
+from playwright.sync_api import Playwright, sync_playwright, expect
+
+
+def run(playwright: Playwright) -> None:
+    browser = playwright.chromium.launch(headless=False)
+    context = browser.new_context()
+    page = context.new_page()
+    page.goto("https://the-internet.herokuapp.com/login")
+    page.get_by_role("textbox", name="Username").click()
+    page.get_by_role("textbox", name="Username").fill("tomsmith")
+    page.get_by_role("textbox", name="Password").click()
+    page.get_by_role("textbox", name="Password").press("CapsLock")
+    page.get_by_role("textbox", name="Password").fill("S")
+    page.get_by_role("textbox", name="Password").press("CapsLock")
+    page.get_by_role("textbox", name="Password").fill("Super")
+    page.get_by_role("textbox", name="Password").press("CapsLock")
+    page.get_by_role("textbox", name="Password").fill("SuperS")
+    page.get_by_role("textbox", name="Password").press("CapsLock")
+    page.get_by_role("textbox", name="Password").fill("SuperSecret")
+    page.get_by_role("textbox", name="Password").press("CapsLock")
+    page.get_by_role("textbox", name="Password").fill("SuperSecretP")
+    page.get_by_role("textbox", name="Password").press("CapsLock")
+    page.get_by_role("textbox", name="Password").fill("SuperSecretPassword!")
+    page.get_by_role("button", name=" Login").click()
+    page.get_by_role("link", name="Logout").click()
+    page.get_by_role("textbox", name="Username").click()
+    page.get_by_role("textbox", name="Username").press("CapsLock")
+    page.get_by_role("textbox", name="Username").fill("S")
+    page.get_by_role("textbox", name="Username").press("CapsLock")
+    page.get_by_role("textbox", name="Username").fill("")
+    page.get_by_role("textbox", name="Username").press("CapsLock")
+    page.get_by_role("textbox", name="Username").fill("T")
+    page.get_by_role("textbox", name="Username").press("CapsLock")
+    page.get_by_role("textbox", name="Username").fill("tomsmith")
+    page.get_by_role("textbox", name="Username").press("Tab")
+    page.get_by_role("textbox", name="Password").press("CapsLock")
+    page.get_by_role("textbox", name="Password").fill("S")
+    page.get_by_role("textbox", name="Password").press("CapsLock")
+    page.get_by_role("textbox", name="Password").fill("Super")
+    page.get_by_role("textbox", name="Password").press("CapsLock")
+    page.get_by_role("textbox", name="Password").fill("SuperS")
+    page.get_by_role("textbox", name="Password").press("CapsLock")
+    page.get_by_role("textbox", name="Password").fill("SuperSecret")
+    page.get_by_role("textbox", name="Password").press("CapsLock")
+    page.get_by_role("textbox", name="Password").fill("SuperSecretP")
+    page.get_by_role("textbox", name="Password").press("CapsLock")
+    page.get_by_role("textbox", name="Password").fill("SuperSecretPassworf!6")
+    page.get_by_role("button", name=" Login").click()
+
+    # ---------------------
+    context.close()
+    browser.close()
+
+
+with sync_playwright() as playwright:
+    run(playwright)
