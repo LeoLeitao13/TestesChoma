@@ -334,7 +334,6 @@ public class FullTeste {
                 false,
                 "SUL", 1.0, null, TODAY, null
         );
-
         assertEquals(11.40, res.tax);
     }
 }
