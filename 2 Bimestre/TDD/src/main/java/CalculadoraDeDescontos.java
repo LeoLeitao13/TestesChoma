@@ -11,5 +11,4 @@ public class CalculadoraDeDescontos {
         } else {
             return valorCompra * 0.10;
         }
-    }
-}
+    } }
